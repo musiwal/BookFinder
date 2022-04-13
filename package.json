@@ -6,9 +6,8 @@
   "scripts": {
     "preinstall": "npm i -g pm2 nodemon",
     "start": "NODE_ENV=production pm2 start ./build/index.js -i 5 --watch",
-    "dev": "NODE_ENV=development nodemon -r tsconfig-paths/register src/index.ts",
+    "dev": "nodemon -r tsconfig-paths/register src/index.ts",
     "build": "ttsc -p ."
-  
   },
   "keywords": [],
   "author": "",
