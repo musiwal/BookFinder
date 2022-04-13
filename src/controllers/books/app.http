@@ -1,0 +1,83 @@
+###
+POST http://localhost:5000/api/v1/auth/signup
+content-type: application/json
+Accept: 'application/json'
+withCredentials: true
+
+{
+    "fullname": "Manny Gordon",
+    "email": "manny@test.com",
+    "password": "test1234",
+    "city": "Dusseldorf",
+    "phoneNumber": "4436999269"
+}
+
+###
+POST http://localhost:5000/api/v1/auth/signin
+content-type: application/json
+Accept: 'application/json'
+withCredentials: true
+
+{
+    "email": "manny@test.com",
+    "password": "test1234"
+}
+
+###
+GET http://localhost:5000/api/v1/auth/signout
+content-type: application/json
+Accept: 'application/json'
+withCredentials: true
+
+###
+GET http://localhost:5000/api/v1/books/1
+content-type: application/json
+Accept: 'application/json'
+withCredentials: true
+
+###
+POST http://localhost:5000/api/v1/book/add
+content-type: application/json
+Accept: 'application/json'
+withCredentials: true
+
+{}
+
+###
+GET http://localhost:5000/api/v1/book/mobile
+content-type: application/json
+Accept: 'application/json'
+withCredentials: true
+
+###
+POST http://localhost:5000/api/v1/book/comment
+content-type: application/json
+Accept: 'application/json'
+withCredentials: true
+
+{
+    "comment": "I love this book so much",
+    "bookId": "623f2cf039c4568ec90d0405"
+}
+
+###
+GET http://localhost:5000/api/v1/user
+content-type: application/json
+Accept: 'application/json'
+withCredentials: true
+
+###
+PUT http://localhost:5000/api/v1/user/book/:bookId
+content-type: application/json
+Accept: 'application/json'
+withCredentials: true
+
+{}
+
+###
+DELETE http://localhost:5000/api/v1/user/book/:bookId
+content-type: application/json
+Accept: 'application/json'
+withCredentials: true
+
+{}
